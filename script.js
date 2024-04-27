@@ -63,6 +63,7 @@ accAmount.forEach(amount => {
   const last = amount.parentElement.nextElementSibling.querySelector("span").textContent;
 
   const perFugure = amount.nextElementSibling.firstChild;
+  
   // percentage calculator
   const perChanV = Math.abs(amount.textContent.replace(/\D/g, "") - last.replace(/\D/g, "")).toFixed(2);
   const percA = (perChanV * 100) / last.replace(/\D/g, "");
