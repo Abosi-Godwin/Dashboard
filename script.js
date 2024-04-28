@@ -57,7 +57,8 @@ graphBars.forEach((inc_bar, index) => {
 
 
 // fill all figure with currency
-const accAmount = document.querySelectorAll(".acc_amount");
+const accAmount = domSelectorAll(".acc_amount");
+
 
 accAmount.forEach(amount => {
   const last = amount.parentElement.nextElementSibling.querySelector("span").textContent;
@@ -81,8 +82,8 @@ accAmount.forEach(amount => {
     changeColor.parentElement.style.color = "orangered";
   }
 
-  const currValue = amount.textContent;
-  amount.textContent = currValue;
+ const currValue = amount.textContent;
+ // amount.textContent = currValue;
 })
 
 
